@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Malcolm Nicouleau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Portfolio BTS SIO</h1>
+            <h2>Malcolm Nicouleau</h2>
+            <p>Étudiant en BTS SIO option SISR</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#moi">Moi</a>
+        <a href="#lycee">Contexte lycée</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#competences">Compétences</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#projets">Projets</a>
+        <a href="#veille">Veille</a>
+    </nav>
+
+    <main>
+
+        <section id="moi">
+            <h2>Moi</h2>
+            <p>
+                Je suis Malcolm Nicouleau, étudiant en BTS SIO option SISR.
+                Ce portfolio présente mon parcours, mes compétences, mes projets de formation,
+                mes stages et les réalisations professionnelles mobilisées pour l’épreuve E5.
+            </p>
+        </section>
+
+        <section id="lycee">
+            <h2>Contexte lycée</h2>
+            <p>
+                Je suis actuellement en BTS SIO au lycée Ozenne.
+                Cette formation me permet de développer des compétences en administration systèmes et réseaux,
+                cybersécurité, support informatique, virtualisation et déploiement de services.
+            </p>
+        </section>
+
+        <section id="parcours">
+            <h2>Mon parcours</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Bac général</h3>
+                    <p>Spécialités NSI, SVT et Mathématiques.</p>
+                </div>
+
+                <div class="card">
+                    <h3>BTS SIO SISR</h3>
+                    <p>Formation orientée systèmes, réseaux, support, sécurité et déploiement.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stages</h3>
+                    <p>Expériences en développement, support utilisateurs, déploiement et gestion d’environnement
+                        technique.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-box">Windows Server</div>
+                <div class="skill-box">Active Directory</div>
+                <div class="skill-box">GPO</div>
+                <div class="skill-box">DHCP / DNS</div>
+                <div class="skill-box">Linux</div>
+                <div class="skill-box">Apache / HTTPS</div>
+                <div class="skill-box">GLPI</div>
+                <div class="skill-box">VLAN / Routage</div>
+                <div class="skill-box">pfSense</div>
+                <div class="skill-box">MDT</div>
+                <div class="skill-box">Microsoft 365</div>
+                <div class="skill-box">Support utilisateurs</div>
+            </div>
+        </section>
+
+        <section id="tableau">
+            <h2>Tableau de synthèse</h2>
+            <p>Vue directe de mon tableau de synthèse :</p>
+
+            <div class="tableau-container">
+                <img src="images/Tableau-de-synthese.png" alt="Tableau de synthèse E5">
+            </div>
+
+            <div class="links">
+                <a class="btn-doc" href="documents/Tableau-de-synthese-Epreuve-E5-BTS-SIO-2026-Malcolm.pdf"
+                    target="_blank">
+                    Télécharger le tableau en PDF
+                </a>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2>Projets et activités</h2>
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="filterProjects('all')">Tout</button>
+                <button class="tab-btn" onclick="filterProjects('formation')">Formation</button>
+                <button class="tab-btn" onclick="filterProjects('stage1')">Stage 1</button>
+                <button class="tab-btn" onclick="filterProjects('stage2')">Stage 2</button>
+            </div>
+
+            <div class="project-list">
+
+                <div class="project-card formation">
+                    <h3>Projet de développement d’une application web (GSB)</h3>
+                    <p>Projet de groupe autour d’une application web.</p>
+                    <a class="btn-small" href="documents/GSB-Mission-7-Compte-Rendu-1.pdf" target="_blank">Voir
+                        document</a>
+                </div>
+
+                <div class="project-card formation">
+                    <h3>Déploiement d’un serveur web sécurisé</h3>
+                    <p>Apache, HTTPS, certificats, accès web sécurisé.</p>
+                    <a class="btn-small" href="documents/compte_rendu_tp2_escudie.pdf" target="_blank">Voir document</a>
+                </div>
+
+                <div class="project-card formation">
+                    <h3>Installation et configuration de GLPI</h3>
+                    <p>Mise en place d’un outil de gestion de parc et de tickets.</p>
+                    <a class="btn-small" href="documents/procedure_installation_glpi.pdf" target="_blank">Voir
+                        document</a>
+                </div>
+
+                <div class="project-card formation">
+                    <h3>Gestion d’un domaine Active Directory</h3>
+                    <p>Utilisateurs, GPO et serveur de fichiers.</p>
+                    <a class="btn-small" href="documents/ap_mission3_fiche_technique.pdf" target="_blank">Voir
+                        document</a>
+                </div>
+
+                <div class="project-card formation">
+                    <h3>Séparation des réseaux des ligues de la M2L</h3>
+                    <p>Projet réseau avec VLAN, segmentation et architecture logique.</p>
+                    <a class="btn-small" href="documents/Diporama-Projet-Separation-des-Ligues-Malcolm.pdf"
+                        target="_blank">Voir document</a>
+                </div>
+
+                <div class="project-card stage1">
+                    <h3>Tests API Mockoon + présentation</h3>
+                    <p>Découverte, test et présentation d’un outil pour les développeurs.</p>
+                </div>
+
+                <div class="project-card stage1">
+                    <h3>Travail et organisation en utilisant la méthode Agile</h3>
+                    <p>Découverte du fonctionnement d’équipe et de l’organisation projet.</p>
+                </div>
+
+                <div class="project-card stage1">
+                    <h3>Rapport de stage 1ère année</h3>
+                    <p>Présentation de mes missions et activités réalisées durant le stage.</p>
+                    <a class="btn-small" href="documents/v4_rapport_activite_stage_1ere_annee.pdf" target="_blank">Voir
+                        document</a>
+                </div>
+
+                <div class="project-card stage2">
+                    <h3>Support utilisateurs et gestion de tickets</h3>
+                    <p>Assistance, résolution de problèmes et suivi des demandes.</p>
+                </div>
+
+                <div class="project-card stage2">
+                    <h3>Déploiement de postes Windows avec MDT</h3>
+                    <p>Préparation et déploiement automatisé de postes clients.</p>
+                </div>
+
+                <div class="project-card stage2">
+                    <h3>Création de comptes Microsoft 365 / Active Directory</h3>
+                    <p>Gestion de comptes et mise à disposition de l’environnement utilisateur.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="veille">
+            <h2>Veille technologique</h2>
+            <p>
+                J’ai mis en place un dispositif de veille technologique afin de suivre
+                l’actualité des systèmes, réseaux, cybersécurité et outils informatiques.
+            </p>
+
+            <div class="links">
+                <a class="btn-doc"
+                    href="documents/Document-Technique-Dispositif-de-Veille-Technologique-et-Informationnelle.pdf"
+                    target="_blank">
+                    Voir le document de veille
+                </a>
+
+                <a class="btn-doc" href="https://feedly.com/i/my/me" target="_blank">
+                    Ouvrir ma veille sur Feedly
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Portfolio BTS SIO - Malcolm Nicouleau</p>
+    </footer>
+
+    <script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else if (card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
